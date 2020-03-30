@@ -56,6 +56,13 @@ Python/Hyperledger Sawtooth/Docker/Docker-Composer/Protobuf/Setuptools/Sanic/She
 - Get recent data from the repo: “git pull”
 - Start new containers: “docker-compose up”
 
+## Access the webapp
+
+- In another terminal window, run `docker ps`. You should see a Docker image called `healthcare-web-app` being portforwarded to localhost (0.0.0.0), default port 8041.
+- In your preferred browser, navigate to localhost:8041 (or whichever port from previous step)
+- You should see a navigation pane for several resources (Clinic, Doctor, etc.)
+
+
 # Demo
 
 TBD

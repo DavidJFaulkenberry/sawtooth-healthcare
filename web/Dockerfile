@@ -24,6 +24,8 @@ COPY ./web/package*.json ./
 
 USER node
 
+RUN echo "registry=https://repo1.uhc.com/artifactory/api/npm/npm-virtual/" > .npmrc
+
 RUN npm install
 
 COPY --chown=node:node . .
